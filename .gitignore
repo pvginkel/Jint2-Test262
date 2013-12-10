@@ -1,0 +1,11 @@
+/*.suo
+/*.user
+Thumbs.db
+/*.docstates
+/*.shfbproj_*
+/*.dotCover
+/packages
+/_ReSharper*
+/*.DotSettings
+/bin
+/obj

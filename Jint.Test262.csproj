@@ -1,0 +1,479 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{620B9E39-48CE-4FBB-A9F3-6A54EDA0FA49}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Jint.Test262</RootNamespace>
+    <AssemblyName>Jint.Test262</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework">
+      <HintPath>packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnnexBFixture.cs" />
+    <Compile Include="BestPracticeFixture.cs" />
+    <Compile Include="Ch06Fixture.cs" />
+    <Compile Include="Ch07\7.6\7.6.1\_7_6_1_1Fixture.cs" />
+    <Compile Include="Ch07\7.6\7.6.1\_7_6_1_2Fixture.cs" />
+    <Compile Include="Ch07\7.6\_7_6_1Fixture.cs" />
+    <Compile Include="Ch07\7.8\_7_8_1Fixture.cs" />
+    <Compile Include="Ch07\7.8\_7_8_2Fixture.cs" />
+    <Compile Include="Ch07\7.8\_7_8_3Fixture.cs" />
+    <Compile Include="Ch07\7.8\_7_8_4Fixture.cs" />
+    <Compile Include="Ch07\7.8\_7_8_5Fixture.cs" />
+    <Compile Include="Ch07\7.9\_7_9_2Fixture.cs" />
+    <Compile Include="Ch07\_7_2Fixture.cs" />
+    <Compile Include="Ch07\_7_3Fixture.cs" />
+    <Compile Include="Ch07\_7_4Fixture.cs" />
+    <Compile Include="Ch07\_7_6Fixture.cs" />
+    <Compile Include="Ch07\_7_7Fixture.cs" />
+    <Compile Include="Ch07\_7_9Fixture.cs" />
+    <Compile Include="Ch08\8.12\_8_12_1Fixture.cs" />
+    <Compile Include="Ch08\8.12\_8_12_3Fixture.cs" />
+    <Compile Include="Ch08\8.12\_8_12_4Fixture.cs" />
+    <Compile Include="Ch08\8.12\_8_12_5Fixture.cs" />
+    <Compile Include="Ch08\8.12\_8_12_6Fixture.cs" />
+    <Compile Include="Ch08\8.12\_8_12_7Fixture.cs" />
+    <Compile Include="Ch08\8.12\_8_12_8Fixture.cs" />
+    <Compile Include="Ch08\8.12\_8_12_9Fixture.cs" />
+    <Compile Include="Ch08\8.6\_8_6_1Fixture.cs" />
+    <Compile Include="Ch08\8.6\_8_6_2Fixture.cs" />
+    <Compile Include="Ch08\8.7\_8_7_2Fixture.cs" />
+    <Compile Include="Ch08\_8_1Fixture.cs" />
+    <Compile Include="Ch08\_8_2Fixture.cs" />
+    <Compile Include="Ch08\_8_3Fixture.cs" />
+    <Compile Include="Ch08\_8_4Fixture.cs" />
+    <Compile Include="Ch08\_8_5Fixture.cs" />
+    <Compile Include="Ch08\_8_6Fixture.cs" />
+    <Compile Include="Ch08\_8_7Fixture.cs" />
+    <Compile Include="Ch08\_8_8Fixture.cs" />
+    <Compile Include="Ch09\9.3\_9_3_1Fixture.cs" />
+    <Compile Include="Ch09\9.8\_9_8_1Fixture.cs" />
+    <Compile Include="Ch09\_9_1Fixture.cs" />
+    <Compile Include="Ch09\_9_2Fixture.cs" />
+    <Compile Include="Ch09\_9_3Fixture.cs" />
+    <Compile Include="Ch09\_9_4Fixture.cs" />
+    <Compile Include="Ch09\_9_5Fixture.cs" />
+    <Compile Include="Ch09\_9_6Fixture.cs" />
+    <Compile Include="Ch09\_9_7Fixture.cs" />
+    <Compile Include="Ch09\_9_8Fixture.cs" />
+    <Compile Include="Ch09\_9_9Fixture.cs" />
+    <Compile Include="Ch10\10.1\_10_1_1Fixture.cs" />
+    <Compile Include="Ch10\10.2\10.2.1\10.2.1.1\_10_2_1_1_3Fixture.cs" />
+    <Compile Include="Ch10\10.2\_10_2_1Fixture.cs" />
+    <Compile Include="Ch10\10.2\_10_2_2Fixture.cs" />
+    <Compile Include="Ch10\10.2\_10_2_3Fixture.cs" />
+    <Compile Include="Ch10\10.4\_10_4_1Fixture.cs" />
+    <Compile Include="Ch10\10.4\_10_4_2Fixture.cs" />
+    <Compile Include="Ch10\10.4\_10_4_3Fixture.cs" />
+    <Compile Include="Ch10\_10_1Fixture.cs" />
+    <Compile Include="Ch10\_10_4Fixture.cs" />
+    <Compile Include="Ch10\_10_5Fixture.cs" />
+    <Compile Include="Ch10\_10_6Fixture.cs" />
+    <Compile Include="Ch11\11.10\_11_10_1Fixture.cs" />
+    <Compile Include="Ch11\11.10\_11_10_2Fixture.cs" />
+    <Compile Include="Ch11\11.10\_11_10_3Fixture.cs" />
+    <Compile Include="Ch11\11.11\_11_11_1Fixture.cs" />
+    <Compile Include="Ch11\11.11\_11_11_2Fixture.cs" />
+    <Compile Include="Ch11\11.13\_11_13_1Fixture.cs" />
+    <Compile Include="Ch11\11.13\_11_13_2Fixture.cs" />
+    <Compile Include="Ch11\11.1\_11_1_1Fixture.cs" />
+    <Compile Include="Ch11\11.1\_11_1_2Fixture.cs" />
+    <Compile Include="Ch11\11.1\_11_1_4Fixture.cs" />
+    <Compile Include="Ch11\11.1\_11_1_5Fixture.cs" />
+    <Compile Include="Ch11\11.1\_11_1_6Fixture.cs" />
+    <Compile Include="Ch11\11.2\_11_2_1Fixture.cs" />
+    <Compile Include="Ch11\11.2\_11_2_2Fixture.cs" />
+    <Compile Include="Ch11\11.2\_11_2_3Fixture.cs" />
+    <Compile Include="Ch11\11.2\_11_2_4Fixture.cs" />
+    <Compile Include="Ch11\11.3\_11_3_1Fixture.cs" />
+    <Compile Include="Ch11\11.3\_11_3_2Fixture.cs" />
+    <Compile Include="Ch11\11.4\_11_4_1Fixture.cs" />
+    <Compile Include="Ch11\11.4\_11_4_2Fixture.cs" />
+    <Compile Include="Ch11\11.4\_11_4_3Fixture.cs" />
+    <Compile Include="Ch11\11.4\_11_4_4Fixture.cs" />
+    <Compile Include="Ch11\11.4\_11_4_5Fixture.cs" />
+    <Compile Include="Ch11\11.4\_11_4_6Fixture.cs" />
+    <Compile Include="Ch11\11.4\_11_4_7Fixture.cs" />
+    <Compile Include="Ch11\11.4\_11_4_8Fixture.cs" />
+    <Compile Include="Ch11\11.4\_11_4_9Fixture.cs" />
+    <Compile Include="Ch11\11.5\_11_5_1Fixture.cs" />
+    <Compile Include="Ch11\11.5\_11_5_2Fixture.cs" />
+    <Compile Include="Ch11\11.5\_11_5_3Fixture.cs" />
+    <Compile Include="Ch11\11.6\_11_6_1Fixture.cs" />
+    <Compile Include="Ch11\11.6\_11_6_2Fixture.cs" />
+    <Compile Include="Ch11\11.7\_11_7_1Fixture.cs" />
+    <Compile Include="Ch11\11.7\_11_7_2Fixture.cs" />
+    <Compile Include="Ch11\11.7\_11_7_3Fixture.cs" />
+    <Compile Include="Ch11\11.8\_11_8_1Fixture.cs" />
+    <Compile Include="Ch11\11.8\_11_8_2Fixture.cs" />
+    <Compile Include="Ch11\11.8\_11_8_3Fixture.cs" />
+    <Compile Include="Ch11\11.8\_11_8_4Fixture.cs" />
+    <Compile Include="Ch11\11.8\_11_8_6Fixture.cs" />
+    <Compile Include="Ch11\11.8\_11_8_7Fixture.cs" />
+    <Compile Include="Ch11\11.9\_11_9_1Fixture.cs" />
+    <Compile Include="Ch11\11.9\_11_9_2Fixture.cs" />
+    <Compile Include="Ch11\11.9\_11_9_4Fixture.cs" />
+    <Compile Include="Ch11\11.9\_11_9_5Fixture.cs" />
+    <Compile Include="Ch11\_11_12Fixture.cs" />
+    <Compile Include="Ch11\_11_14Fixture.cs" />
+    <Compile Include="Ch12\12.10\_12_10_1Fixture.cs" />
+    <Compile Include="Ch12\12.14\_12_14_1Fixture.cs" />
+    <Compile Include="Ch12\12.2\_12_2_1Fixture.cs" />
+    <Compile Include="Ch12\12.6\_12_6_1Fixture.cs" />
+    <Compile Include="Ch12\12.6\_12_6_2Fixture.cs" />
+    <Compile Include="Ch12\12.6\_12_6_3Fixture.cs" />
+    <Compile Include="Ch12\12.6\_12_6_4Fixture.cs" />
+    <Compile Include="Ch12\_12_10Fixture.cs" />
+    <Compile Include="Ch12\_12_11Fixture.cs" />
+    <Compile Include="Ch12\_12_12Fixture.cs" />
+    <Compile Include="Ch12\_12_13Fixture.cs" />
+    <Compile Include="Ch12\_12_14Fixture.cs" />
+    <Compile Include="Ch12\_12_1Fixture.cs" />
+    <Compile Include="Ch12\_12_2Fixture.cs" />
+    <Compile Include="Ch12\_12_3Fixture.cs" />
+    <Compile Include="Ch12\_12_4Fixture.cs" />
+    <Compile Include="Ch12\_12_5Fixture.cs" />
+    <Compile Include="Ch12\_12_7Fixture.cs" />
+    <Compile Include="Ch12\_12_8Fixture.cs" />
+    <Compile Include="Ch12\_12_9Fixture.cs" />
+    <Compile Include="Ch13\_13_0Fixture.cs" />
+    <Compile Include="Ch13\_13_1Fixture.cs" />
+    <Compile Include="Ch13\_13_2Fixture.cs" />
+    <Compile Include="Ch14\_14_0Fixture.cs" />
+    <Compile Include="Ch14\_14_1Fixture.cs" />
+    <Compile Include="Ch15\15.10\15.10.2\_15_10_2_10Fixture.cs" />
+    <Compile Include="Ch15\15.10\15.10.2\_15_10_2_11Fixture.cs" />
+    <Compile Include="Ch15\15.10\15.10.2\_15_10_2_12Fixture.cs" />
+    <Compile Include="Ch15\15.10\15.10.2\_15_10_2_13Fixture.cs" />
+    <Compile Include="Ch15\15.10\15.10.2\_15_10_2_15Fixture.cs" />
+    <Compile Include="Ch15\15.10\15.10.2\_15_10_2_3Fixture.cs" />
+    <Compile Include="Ch15\15.10\15.10.2\_15_10_2_5Fixture.cs" />
+    <Compile Include="Ch15\15.10\15.10.2\_15_10_2_6Fixture.cs" />
+    <Compile Include="Ch15\15.10\15.10.2\_15_10_2_7Fixture.cs" />
+    <Compile Include="Ch15\15.10\15.10.2\_15_10_2_8Fixture.cs" />
+    <Compile Include="Ch15\15.10\15.10.2\_15_10_2_9Fixture.cs" />
+    <Compile Include="Ch15\15.10\15.10.4\_15_10_4_1Fixture.cs" />
+    <Compile Include="Ch15\15.10\15.10.6\_15_10_6_2Fixture.cs" />
+    <Compile Include="Ch15\15.10\15.10.6\_15_10_6_3Fixture.cs" />
+    <Compile Include="Ch15\15.10\15.10.6\_15_10_6_4Fixture.cs" />
+    <Compile Include="Ch15\15.10\15.10.7\_15_10_7_1Fixture.cs" />
+    <Compile Include="Ch15\15.10\15.10.7\_15_10_7_2Fixture.cs" />
+    <Compile Include="Ch15\15.10\15.10.7\_15_10_7_3Fixture.cs" />
+    <Compile Include="Ch15\15.10\15.10.7\_15_10_7_4Fixture.cs" />
+    <Compile Include="Ch15\15.10\15.10.7\_15_10_7_5Fixture.cs" />
+    <Compile Include="Ch15\15.10\_15_10_1Fixture.cs" />
+    <Compile Include="Ch15\15.10\_15_10_2Fixture.cs" />
+    <Compile Include="Ch15\15.10\_15_10_3Fixture.cs" />
+    <Compile Include="Ch15\15.10\_15_10_4Fixture.cs" />
+    <Compile Include="Ch15\15.10\_15_10_5Fixture.cs" />
+    <Compile Include="Ch15\15.10\_15_10_6Fixture.cs" />
+    <Compile Include="Ch15\15.10\_15_10_7Fixture.cs" />
+    <Compile Include="Ch15\15.11\15.11.4\_15_11_4_2Fixture.cs" />
+    <Compile Include="Ch15\15.11\15.11.4\_15_11_4_3Fixture.cs" />
+    <Compile Include="Ch15\15.11\15.11.4\_15_11_4_4Fixture.cs" />
+    <Compile Include="Ch15\15.11\_15_11_1Fixture.cs" />
+    <Compile Include="Ch15\15.11\_15_11_2Fixture.cs" />
+    <Compile Include="Ch15\15.11\_15_11_3Fixture.cs" />
+    <Compile Include="Ch15\15.11\_15_11_4Fixture.cs" />
+    <Compile Include="Ch15\15.12\15.12.1\_15_12_1_1Fixture.cs" />
+    <Compile Include="Ch15\15.12\_15_12_2Fixture.cs" />
+    <Compile Include="Ch15\15.12\_15_12_3Fixture.cs" />
+    <Compile Include="Ch15\15.1\15.1.1\_15_1_1_1Fixture.cs" />
+    <Compile Include="Ch15\15.1\15.1.1\_15_1_1_2Fixture.cs" />
+    <Compile Include="Ch15\15.1\15.1.1\_15_1_1_3Fixture.cs" />
+    <Compile Include="Ch15\15.1\15.1.2\_15_1_2_1Fixture.cs" />
+    <Compile Include="Ch15\15.1\15.1.2\_15_1_2_2Fixture.cs" />
+    <Compile Include="Ch15\15.1\15.1.2\_15_1_2_3Fixture.cs" />
+    <Compile Include="Ch15\15.1\15.1.2\_15_1_2_4Fixture.cs" />
+    <Compile Include="Ch15\15.1\15.1.2\_15_1_2_5Fixture.cs" />
+    <Compile Include="Ch15\15.1\15.1.3\_15_1_3_1Fixture.cs" />
+    <Compile Include="Ch15\15.1\15.1.3\_15_1_3_2Fixture.cs" />
+    <Compile Include="Ch15\15.1\15.1.3\_15_1_3_3Fixture.cs" />
+    <Compile Include="Ch15\15.1\15.1.3\_15_1_3_4Fixture.cs" />
+    <Compile Include="Ch15\15.2\15.2.3\_15_2_3_10Fixture.cs" />
+    <Compile Include="Ch15\15.2\15.2.3\_15_2_3_11Fixture.cs" />
+    <Compile Include="Ch15\15.2\15.2.3\_15_2_3_12Fixture.cs" />
+    <Compile Include="Ch15\15.2\15.2.3\_15_2_3_13Fixture.cs" />
+    <Compile Include="Ch15\15.2\15.2.3\_15_2_3_14Fixture.cs" />
+    <Compile Include="Ch15\15.2\15.2.3\_15_2_3_1Fixture.cs" />
+    <Compile Include="Ch15\15.2\15.2.3\_15_2_3_2Fixture.cs" />
+    <Compile Include="Ch15\15.2\15.2.3\_15_2_3_3Fixture.cs" />
+    <Compile Include="Ch15\15.2\15.2.3\_15_2_3_4Fixture.cs" />
+    <Compile Include="Ch15\15.2\15.2.3\_15_2_3_5Fixture.cs" />
+    <Compile Include="Ch15\15.2\15.2.3\_15_2_3_6Fixture.cs" />
+    <Compile Include="Ch15\15.2\15.2.3\_15_2_3_7Fixture.cs" />
+    <Compile Include="Ch15\15.2\15.2.3\_15_2_3_8Fixture.cs" />
+    <Compile Include="Ch15\15.2\15.2.3\_15_2_3_9Fixture.cs" />
+    <Compile Include="Ch15\15.2\15.2.4\_15_2_4_2Fixture.cs" />
+    <Compile Include="Ch15\15.2\15.2.4\_15_2_4_3Fixture.cs" />
+    <Compile Include="Ch15\15.2\15.2.4\_15_2_4_4Fixture.cs" />
+    <Compile Include="Ch15\15.2\15.2.4\_15_2_4_5Fixture.cs" />
+    <Compile Include="Ch15\15.2\15.2.4\_15_2_4_6Fixture.cs" />
+    <Compile Include="Ch15\15.2\15.2.4\_15_2_4_7Fixture.cs" />
+    <Compile Include="Ch15\15.2\_15_2_1Fixture.cs" />
+    <Compile Include="Ch15\15.2\_15_2_2Fixture.cs" />
+    <Compile Include="Ch15\15.2\_15_2_3Fixture.cs" />
+    <Compile Include="Ch15\15.2\_15_2_4Fixture.cs" />
+    <Compile Include="Ch15\15.3\15.3.2\_15_3_2_1Fixture.cs" />
+    <Compile Include="Ch15\15.3\15.3.3\_15_3_3_1Fixture.cs" />
+    <Compile Include="Ch15\15.3\15.3.3\_15_3_3_2Fixture.cs" />
+    <Compile Include="Ch15\15.3\15.3.4\_15_3_4_2Fixture.cs" />
+    <Compile Include="Ch15\15.3\15.3.4\_15_3_4_3Fixture.cs" />
+    <Compile Include="Ch15\15.3\15.3.4\_15_3_4_4Fixture.cs" />
+    <Compile Include="Ch15\15.3\15.3.4\_15_3_4_5Fixture.cs" />
+    <Compile Include="Ch15\15.3\15.3.4\_15_3_4_5_1Fixture.cs" />
+    <Compile Include="Ch15\15.3\15.3.4\_15_3_4_5_2Fixture.cs" />
+    <Compile Include="Ch15\15.3\15.3.5\_15_3_5_4Fixture.cs" />
+    <Compile Include="Ch15\15.3\_15_3_2Fixture.cs" />
+    <Compile Include="Ch15\15.3\_15_3_3Fixture.cs" />
+    <Compile Include="Ch15\15.3\_15_3_4Fixture.cs" />
+    <Compile Include="Ch15\15.3\_15_3_5Fixture.cs" />
+    <Compile Include="Ch15\15.4\15.4.2\_15_4_2_1Fixture.cs" />
+    <Compile Include="Ch15\15.4\15.4.2\_15_4_2_2Fixture.cs" />
+    <Compile Include="Ch15\15.4\15.4.3\_15_4_3_1Fixture.cs" />
+    <Compile Include="Ch15\15.4\15.4.3\_15_4_3_2Fixture.cs" />
+    <Compile Include="Ch15\15.4\15.4.4\_15_4_4_10Fixture.cs" />
+    <Compile Include="Ch15\15.4\15.4.4\_15_4_4_11Fixture.cs" />
+    <Compile Include="Ch15\15.4\15.4.4\_15_4_4_12Fixture.cs" />
+    <Compile Include="Ch15\15.4\15.4.4\_15_4_4_13Fixture.cs" />
+    <Compile Include="Ch15\15.4\15.4.4\_15_4_4_14Fixture.cs" />
+    <Compile Include="Ch15\15.4\15.4.4\_15_4_4_15Fixture.cs" />
+    <Compile Include="Ch15\15.4\15.4.4\_15_4_4_16Fixture.cs" />
+    <Compile Include="Ch15\15.4\15.4.4\_15_4_4_17Fixture.cs" />
+    <Compile Include="Ch15\15.4\15.4.4\_15_4_4_18Fixture.cs" />
+    <Compile Include="Ch15\15.4\15.4.4\_15_4_4_19Fixture.cs" />
+    <Compile Include="Ch15\15.4\15.4.4\_15_4_4_1Fixture.cs" />
+    <Compile Include="Ch15\15.4\15.4.4\_15_4_4_20Fixture.cs" />
+    <Compile Include="Ch15\15.4\15.4.4\_15_4_4_21Fixture.cs" />
+    <Compile Include="Ch15\15.4\15.4.4\_15_4_4_22Fixture.cs" />
+    <Compile Include="Ch15\15.4\15.4.4\_15_4_4_2Fixture.cs" />
+    <Compile Include="Ch15\15.4\15.4.4\_15_4_4_3Fixture.cs" />
+    <Compile Include="Ch15\15.4\15.4.4\_15_4_4_4Fixture.cs" />
+    <Compile Include="Ch15\15.4\15.4.4\_15_4_4_5Fixture.cs" />
+    <Compile Include="Ch15\15.4\15.4.4\_15_4_4_6Fixture.cs" />
+    <Compile Include="Ch15\15.4\15.4.4\_15_4_4_7Fixture.cs" />
+    <Compile Include="Ch15\15.4\15.4.4\_15_4_4_8Fixture.cs" />
+    <Compile Include="Ch15\15.4\15.4.4\_15_4_4_9Fixture.cs" />
+    <Compile Include="Ch15\15.4\15.4.5\_15_4_5_1Fixture.cs" />
+    <Compile Include="Ch15\15.4\15.4.5\_15_4_5_2Fixture.cs" />
+    <Compile Include="Ch15\15.4\_15_4_1Fixture.cs" />
+    <Compile Include="Ch15\15.4\_15_4_3Fixture.cs" />
+    <Compile Include="Ch15\15.4\_15_4_4Fixture.cs" />
+    <Compile Include="Ch15\15.4\_15_4_5Fixture.cs" />
+    <Compile Include="Ch15\15.5\15.5.4\_15_5_4_10Fixture.cs" />
+    <Compile Include="Ch15\15.5\15.5.4\_15_5_4_11Fixture.cs" />
+    <Compile Include="Ch15\15.5\15.5.4\_15_5_4_12Fixture.cs" />
+    <Compile Include="Ch15\15.5\15.5.4\_15_5_4_13Fixture.cs" />
+    <Compile Include="Ch15\15.5\15.5.4\_15_5_4_14Fixture.cs" />
+    <Compile Include="Ch15\15.5\15.5.4\_15_5_4_15Fixture.cs" />
+    <Compile Include="Ch15\15.5\15.5.4\_15_5_4_16Fixture.cs" />
+    <Compile Include="Ch15\15.5\15.5.4\_15_5_4_17Fixture.cs" />
+    <Compile Include="Ch15\15.5\15.5.4\_15_5_4_18Fixture.cs" />
+    <Compile Include="Ch15\15.5\15.5.4\_15_5_4_19Fixture.cs" />
+    <Compile Include="Ch15\15.5\15.5.4\_15_5_4_20Fixture.cs" />
+    <Compile Include="Ch15\15.5\15.5.4\_15_5_4_4Fixture.cs" />
+    <Compile Include="Ch15\15.5\15.5.4\_15_5_4_5Fixture.cs" />
+    <Compile Include="Ch15\15.5\15.5.4\_15_5_4_6Fixture.cs" />
+    <Compile Include="Ch15\15.5\15.5.4\_15_5_4_7Fixture.cs" />
+    <Compile Include="Ch15\15.5\15.5.4\_15_5_4_8Fixture.cs" />
+    <Compile Include="Ch15\15.5\15.5.4\_15_5_4_9Fixture.cs" />
+    <Compile Include="Ch15\15.5\15.5.5\_15_5_5_2Fixture.cs" />
+    <Compile Include="Ch15\15.5\_15_5_1Fixture.cs" />
+    <Compile Include="Ch15\15.5\_15_5_2Fixture.cs" />
+    <Compile Include="Ch15\15.5\_15_5_3Fixture.cs" />
+    <Compile Include="Ch15\15.5\_15_5_4Fixture.cs" />
+    <Compile Include="Ch15\15.5\_15_5_5Fixture.cs" />
+    <Compile Include="Ch15\15.6\15.6.3\_15_6_3_1Fixture.cs" />
+    <Compile Include="Ch15\15.6\_15_6_1Fixture.cs" />
+    <Compile Include="Ch15\15.6\_15_6_2Fixture.cs" />
+    <Compile Include="Ch15\15.6\_15_6_3Fixture.cs" />
+    <Compile Include="Ch15\15.6\_15_6_4Fixture.cs" />
+    <Compile Include="Ch15\15.7\15.7.3\_15_7_3_1Fixture.cs" />
+    <Compile Include="Ch15\15.7\15.7.3\_15_7_3_2Fixture.cs" />
+    <Compile Include="Ch15\15.7\15.7.3\_15_7_3_3Fixture.cs" />
+    <Compile Include="Ch15\15.7\15.7.3\_15_7_3_4Fixture.cs" />
+    <Compile Include="Ch15\15.7\15.7.3\_15_7_3_5Fixture.cs" />
+    <Compile Include="Ch15\15.7\15.7.3\_15_7_3_6Fixture.cs" />
+    <Compile Include="Ch15\15.7\15.7.4\_15_7_4_1Fixture.cs" />
+    <Compile Include="Ch15\15.7\15.7.4\_15_7_4_2Fixture.cs" />
+    <Compile Include="Ch15\15.7\15.7.4\_15_7_4_4Fixture.cs" />
+    <Compile Include="Ch15\15.7\15.7.4\_15_7_4_5Fixture.cs" />
+    <Compile Include="Ch15\15.7\_15_7_1Fixture.cs" />
+    <Compile Include="Ch15\15.7\_15_7_2Fixture.cs" />
+    <Compile Include="Ch15\15.7\_15_7_3Fixture.cs" />
+    <Compile Include="Ch15\15.7\_15_7_4Fixture.cs" />
+    <Compile Include="Ch15\15.7\_15_7_5Fixture.cs" />
+    <Compile Include="Ch15\15.8\15.8.1\_15_8_1_1Fixture.cs" />
+    <Compile Include="Ch15\15.8\15.8.1\_15_8_1_2Fixture.cs" />
+    <Compile Include="Ch15\15.8\15.8.1\_15_8_1_3Fixture.cs" />
+    <Compile Include="Ch15\15.8\15.8.1\_15_8_1_4Fixture.cs" />
+    <Compile Include="Ch15\15.8\15.8.1\_15_8_1_5Fixture.cs" />
+    <Compile Include="Ch15\15.8\15.8.1\_15_8_1_6Fixture.cs" />
+    <Compile Include="Ch15\15.8\15.8.1\_15_8_1_7Fixture.cs" />
+    <Compile Include="Ch15\15.8\15.8.1\_15_8_1_8Fixture.cs" />
+    <Compile Include="Ch15\15.8\15.8.2\_15_8_2_10Fixture.cs" />
+    <Compile Include="Ch15\15.8\15.8.2\_15_8_2_11Fixture.cs" />
+    <Compile Include="Ch15\15.8\15.8.2\_15_8_2_12Fixture.cs" />
+    <Compile Include="Ch15\15.8\15.8.2\_15_8_2_13Fixture.cs" />
+    <Compile Include="Ch15\15.8\15.8.2\_15_8_2_14Fixture.cs" />
+    <Compile Include="Ch15\15.8\15.8.2\_15_8_2_15Fixture.cs" />
+    <Compile Include="Ch15\15.8\15.8.2\_15_8_2_16Fixture.cs" />
+    <Compile Include="Ch15\15.8\15.8.2\_15_8_2_17Fixture.cs" />
+    <Compile Include="Ch15\15.8\15.8.2\_15_8_2_18Fixture.cs" />
+    <Compile Include="Ch15\15.8\15.8.2\_15_8_2_1Fixture.cs" />
+    <Compile Include="Ch15\15.8\15.8.2\_15_8_2_2Fixture.cs" />
+    <Compile Include="Ch15\15.8\15.8.2\_15_8_2_3Fixture.cs" />
+    <Compile Include="Ch15\15.8\15.8.2\_15_8_2_4Fixture.cs" />
+    <Compile Include="Ch15\15.8\15.8.2\_15_8_2_5Fixture.cs" />
+    <Compile Include="Ch15\15.8\15.8.2\_15_8_2_6Fixture.cs" />
+    <Compile Include="Ch15\15.8\15.8.2\_15_8_2_7Fixture.cs" />
+    <Compile Include="Ch15\15.8\15.8.2\_15_8_2_8Fixture.cs" />
+    <Compile Include="Ch15\15.8\15.8.2\_15_8_2_9Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.1\_15_9_1_15Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.4\_15_9_4_1Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.4\_15_9_4_2Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.4\_15_9_4_3Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.4\_15_9_4_4Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_10Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_11Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_12Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_13Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_14Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_15Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_16Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_17Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_18Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_19Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_1Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_20Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_21Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_22Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_23Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_24Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_25Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_26Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_27Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_28Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_29Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_2Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_30Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_31Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_32Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_33Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_34Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_35Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_36Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_37Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_38Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_39Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_3Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_40Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_41Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_42Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_43Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_44Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_4Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_5Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_6Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_7Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_8Fixture.cs" />
+    <Compile Include="Ch15\15.9\15.9.5\_15_9_5_9Fixture.cs" />
+    <Compile Include="Ch15\15.9\_15_9_2Fixture.cs" />
+    <Compile Include="Ch15\15.9\_15_9_3Fixture.cs" />
+    <Compile Include="Ch15\15.9\_15_9_4Fixture.cs" />
+    <Compile Include="Ch15\15.9\_15_9_5Fixture.cs" />
+    <Compile Include="Ch15\_15_11Fixture.cs" />
+    <Compile Include="Ch15\_15_12Fixture.cs" />
+    <Compile Include="Ch15\_15_1Fixture.cs" />
+    <Compile Include="Ch15\_15_2Fixture.cs" />
+    <Compile Include="Ch15\_15_3Fixture.cs" />
+    <Compile Include="Ch15\_15_4Fixture.cs" />
+    <Compile Include="Intl402\Ch06\_6_2Fixture.cs" />
+    <Compile Include="Intl402\Ch06\_6_3Fixture.cs" />
+    <Compile Include="Intl402\Ch06\_6_4Fixture.cs" />
+    <Compile Include="Intl402\Ch08\_8_0Fixture.cs" />
+    <Compile Include="Intl402\Ch09\_9_1Fixture.cs" />
+    <Compile Include="Intl402\Ch09\_9_2Fixture.cs" />
+    <Compile Include="Intl402\Ch10\_10_1Fixture.cs" />
+    <Compile Include="Intl402\Ch10\_10_2Fixture.cs" />
+    <Compile Include="Intl402\Ch10\_10_3Fixture.cs" />
+    <Compile Include="Intl402\Ch10\_10_4Fixture.cs" />
+    <Compile Include="Intl402\Ch11\_11_1Fixture.cs" />
+    <Compile Include="Intl402\Ch11\_11_2Fixture.cs" />
+    <Compile Include="Intl402\Ch11\_11_3Fixture.cs" />
+    <Compile Include="Intl402\Ch11\_11_4Fixture.cs" />
+    <Compile Include="Intl402\Ch12\_12_1Fixture.cs" />
+    <Compile Include="Intl402\Ch12\_12_2Fixture.cs" />
+    <Compile Include="Intl402\Ch12\_12_3Fixture.cs" />
+    <Compile Include="Intl402\Ch12\_12_4Fixture.cs" />
+    <Compile Include="Intl402\Ch13\_13_1Fixture.cs" />
+    <Compile Include="Intl402\Ch13\_13_2Fixture.cs" />
+    <Compile Include="Intl402\Ch13\_13_3Fixture.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Support\Timeout.cs" />
+    <Compile Include="Test262Fixture.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Jint.Tests\Jint.Tests.csproj">
+      <Project>{2d10bafa-ac74-4d14-8b24-5c992742803d}</Project>
+      <Name>Jint.Tests</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Jint\Jint.csproj">
+      <Project>{dbf3aef6-9d13-4e03-899b-561bcfdd9920}</Project>
+      <Name>Jint</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Key.snk" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
